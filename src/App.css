@@ -1,0 +1,13 @@
+.App {
+  display: flex;
+  flex-direction: column;
+}
+
+.feed-container {
+  padding: 24px 80px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  max-width: 1232px;
+  width: 100%;
+  margin: auto;
+}
