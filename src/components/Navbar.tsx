@@ -1,16 +1,17 @@
 import classes from "./Navbar.module.css";
+
 const Navbar = () => {
   return (
-    <div className={classes.container}>
-      <div className={classes.logo}>
-        <img src="src/assets/logo.svg" alt="" />
-        <p>LearnHub</p>
+    <nav className={classes.navbar}>
+      <div className={classes.img}>
+        <img src="https://raw.githubusercontent.com/brightnc/frontend-project/f97552546279c6b12d323855afcd6a3fcf29e23c/src/assets/logo.svg"></img>
       </div>
-      <div className={classes.menuList}>
-        <p>Login</p>
-        <p>Register</p>
+      <div>
+        <button className={classes.LinkBottom}> Login</button>
+        <button className={classes.PrimaryBottom}> Register</button>
       </div>
-    </div>
+    </nav>
   );
 };
+
 export default Navbar;
