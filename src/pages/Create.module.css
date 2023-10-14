@@ -1,4 +1,4 @@
-.loginForm {
+.container {
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
@@ -9,8 +9,8 @@
   gap: 36px;
 }
 
-.loginContainer {
-  display: grid;
+.videoUrl {
+  display: flex;
   flex-direction: column;
   font-size: large;
   font-weight: bold;
@@ -25,7 +25,7 @@
   gap: 10px;
 }
 
-.login_btn {
+.create_btn {
   color: white;
   background-color: #ff731d;
   border-radius: 10px;

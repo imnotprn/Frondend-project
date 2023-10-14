@@ -1,0 +1,78 @@
+.container {
+  width: 60%;
+  max-width: 1440px;
+  margin: 32px auto;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  max-width: 1440px;
+  gap: 22px;
+  background-color: #fff7e9;
+  color: #656b6e;
+  border-radius: 12px;
+  padding: 32px;
+}
+
+.titleGroup {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 10px;
+}
+
+.videoTitle {
+  color: #ff731d;
+}
+
+.creatorName {
+  font-size: x-large;
+  color: #656b6e;
+}
+
+.video {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.videoUrl {
+  width: 100%;
+}
+
+.commentGroup {
+  box-sizing: border-box;
+  background-color: white;
+  padding: 32px;
+  border-radius: 10px;
+}
+
+.postedBy {
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+  align-items: end;
+}
+
+.star {
+  display: flex;
+  text-align: right;
+}
+
+.btnGroup {
+  display: flex;
+  gap: 5px;
+}
+
+.edit_btn {
+  color: #656b6e;
+  border-radius: 10px;
+}
+
+.delete_btn {
+  color: #000000;
+  background-color: rgb(255, 25, 25);
+  border-radius: 10px;
+}
