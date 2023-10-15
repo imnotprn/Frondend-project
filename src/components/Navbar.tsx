@@ -1,14 +1,35 @@
+import { NavLink } from "react-router-dom";
 import classes from "./Navbar.module.css";
+import { useAuth } from "../providers/AuthProvider";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
+  const { isLoggedIn, logout } = useAuth();
+
   return (
     <nav className={classes.navbar}>
-      <div className={classes.img}>
-        <img src="https://raw.githubusercontent.com/brightnc/frontend-project/f97552546279c6b12d323855afcd6a3fcf29e23c/src/assets/logo.svg"></img>
+      <div className={classes.menu}>
+        <NavLink className={classes.active} to="/">
+          LearnHub
+        </NavLink>
       </div>
-      <div>
-        <button className={classes.LinkBottom}> Login</button>
-        <button className={classes.PrimaryBottom}> Register</button>
+      <div className={classes.menu}>
+        {isLoggedIn ? (
+          <>
+            <button className={classes.login_btn} onClick={logout}>
+              Logout
+            </button>
+          </>
+        ) : (
+          <>
+            <Link to="/login" className={classes.active}>
+              Login
+            </Link>
+            <Link to="/register" className={classes.active}>
+              Register
+            </Link>
+          </>
+        )}
       </div>
     </nav>
   );
